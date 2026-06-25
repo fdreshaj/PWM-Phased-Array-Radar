@@ -83,9 +83,9 @@
 	(footprint "pwm_radar_lib:Wurth_RF_PWM_Conn"
 		(layer "B.Cu")
 		(uuid "a777738c-a08e-4583-a419-b7c6a16efeef")
-		(at 144.5 85 90)
+		(at 131.519471 85 -90)
 		(property "Reference" "J6"
-			(at -9.9 -4 270)
+			(at -9.9 -4 90)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
@@ -99,7 +99,7 @@
 			)
 		)
 		(property "Value" "Conn_Coaxial"
-			(at 0 -1 270)
+			(at 0 -1 90)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "455abca8-de86-4e1d-b16b-3cb6564821e8")
@@ -112,7 +112,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 270)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -126,7 +126,7 @@
 			)
 		)
 		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 0 0 270)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -141,14 +141,14 @@
 		)
 		(attr smd)
 		(fp_line
-			(start -7 -9)
-			(end -7 -4)
+			(start -0.2 -3.9)
+			(end 0.2 -3.9)
 			(stroke
 				(width 0.1)
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "b7816349-68c9-4e22-8688-d93d08628e0f")
+			(uuid "59212192-97d5-42a8-ba81-0d466da7a971")
 		)
 		(fp_line
 			(start 7 -4)
@@ -161,25 +161,14 @@
 			(uuid "92ef884c-8d6b-4f45-8bc3-a190f931dfea")
 		)
 		(fp_line
-			(start -0.2 -3.9)
-			(end 0.2 -3.9)
+			(start -7 -9)
+			(end -7 -4)
 			(stroke
 				(width 0.1)
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "59212192-97d5-42a8-ba81-0d466da7a971")
-		)
-		(fp_circle
-			(center 4.75 -6.5)
-			(end 4.75 -7.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill yes)
-			(layer "Edge.Cuts")
-			(uuid "9c78f9aa-7fc9-47d0-8f07-5d5e1300719e")
+			(uuid "b7816349-68c9-4e22-8688-d93d08628e0f")
 		)
 		(fp_circle
 			(center -4.75 -6.5)
@@ -192,8 +181,19 @@
 			(layer "Edge.Cuts")
 			(uuid "e7081b0a-c366-485e-8a7d-bfd35612f41f")
 		)
+		(fp_circle
+			(center 4.75 -6.5)
+			(end 4.75 -7.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill yes)
+			(layer "Edge.Cuts")
+			(uuid "9c78f9aa-7fc9-47d0-8f07-5d5e1300719e")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2.5 270)
+			(at 0 -2.5 90)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "4069ad33-68ec-4ad1-99ad-69813354af0b")
@@ -206,7 +206,7 @@
 			)
 		)
 		(pad "1" connect rect
-			(at 0 -6.5 90)
+			(at 0 -6.5 270)
 			(size 0.4 5.2)
 			(layers "B.Cu" "B.Mask")
 			(net 2 "Net-(AE1-PCB_Trace)")
@@ -216,7 +216,7 @@
 			(uuid "4b8fda6b-7fad-4189-ba99-f39a76ea2e69")
 		)
 		(pad "2" connect rect
-			(at -4.475 -6.5 90)
+			(at -4.475 -6.5 270)
 			(size 5.15 5.2)
 			(layers "B.Cu" "B.Mask")
 			(net 1 "GND")
@@ -226,7 +226,7 @@
 			(uuid "c718af57-2bf3-45b6-b5ae-25bd244950f5")
 		)
 		(pad "2" connect rect
-			(at 0.025 -6.5 90)
+			(at 0.025 -6.5 270)
 			(size 14.15 5.2)
 			(layers "F.Cu" "F.Mask")
 			(net 1 "GND")
@@ -236,7 +236,7 @@
 			(uuid "f31107dc-0a21-4501-bcc4-d03433e67ff3")
 		)
 		(pad "2" connect rect
-			(at 4.55 -6.5 90)
+			(at 4.55 -6.5 270)
 			(size 5.1 5.2)
 			(layers "B.Cu" "B.Mask")
 			(net 1 "GND")
@@ -361,14 +361,24 @@
 		(uuid "598fef5d-48e0-4c50-b38f-fc27d39f96f7")
 	)
 	(gr_line
-		(start 150.4 86.400002)
-		(end 149.9 84.600001)
+		(start 149.9 87.3)
+		(end 149.9 83.700001)
 		(stroke
 			(width 3)
 			(type default)
 		)
 		(layer "B.Mask")
-		(uuid "732fa08f-45b8-4655-b954-3362ed504936")
+		(uuid "1727e4d1-e6fe-48a8-9b53-612665ca885d")
+	)
+	(gr_line
+		(start 151.7 87.3)
+		(end 149.899999 87.3)
+		(stroke
+			(width 3)
+			(type default)
+		)
+		(layer "B.Mask")
+		(uuid "d993511d-3c3c-48bc-80cd-70a19e18490b")
 	)
 	(gr_rect
 		(start 135.39 76.03)
@@ -414,7 +424,7 @@
 		(uuid "6fb67e7d-a976-47d4-8a94-bef77b2cee07")
 	)
 	(via
-		(at 139.6 82.2)
+		(at 140 82.3)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
