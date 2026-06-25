@@ -240,7 +240,7 @@
 			(layers "F.Cu" "F.Mask")
 			(net 1 "GND")
 			(solder_mask_margin 1)
-			(uuid "fa0a0f01-6262-4e82-a866-e8fb7e934f36")
+			(uuid "94c1f8fd-0c2c-4dea-b584-bcc2229501cf")
 		)
 		(pad "2" connect rect
 			(at 26.51 -0.665)
@@ -248,7 +248,7 @@
 			(layers "F.Cu" "F.Mask")
 			(net 1 "GND")
 			(solder_mask_margin 1)
-			(uuid "fa0a0f01-6262-4e82-a866-e8fb7e934f36")
+			(uuid "d88a2b75-a657-4b9d-be25-1e92a008dabc")
 		)
 		(zone
 			(net 0)
@@ -384,7 +384,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "59212192-97d5-42a8-ba81-0d466da7a971")
+			(uuid "9a68b96e-3724-492a-ad65-f81959e78543")
 		)
 		(fp_line
 			(start 7 -4)
@@ -394,7 +394,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "92ef884c-8d6b-4f45-8bc3-a190f931dfea")
+			(uuid "f54dcda3-24b8-4918-be3f-fea39bb6ffa7")
 		)
 		(fp_line
 			(start -7 -9)
@@ -404,29 +404,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "b7816349-68c9-4e22-8688-d93d08628e0f")
-		)
-		(fp_circle
-			(center -4.75 -6.5)
-			(end -4.75 -7.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill yes)
-			(layer "Edge.Cuts")
-			(uuid "e7081b0a-c366-485e-8a7d-bfd35612f41f")
-		)
-		(fp_circle
-			(center 4.75 -6.5)
-			(end 4.75 -7.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill yes)
-			(layer "Edge.Cuts")
-			(uuid "9c78f9aa-7fc9-47d0-8f07-5d5e1300719e")
+			(uuid "530a6a44-6b14-4ea0-b18a-c3e963c36cb9")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -2.5 90)
@@ -451,10 +429,12 @@
 			(thermal_bridge_angle 45)
 			(uuid "4b8fda6b-7fad-4189-ba99-f39a76ea2e69")
 		)
-		(pad "2" connect rect
+		(pad "2" thru_hole rect
 			(at -4.475 -6.5 270)
 			(size 5.15 5.2)
-			(layers "B.Cu" "B.Mask")
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
 			(net 1 "GND")
 			(pinfunction "Ext")
 			(pintype "passive")
@@ -469,17 +449,19 @@
 			(pinfunction "Ext")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "f31107dc-0a21-4501-bcc4-d03433e67ff3")
+			(uuid "c718af57-2bf3-45b6-b5ae-25bd244950f5")
 		)
-		(pad "2" connect rect
+		(pad "2" thru_hole rect
 			(at 4.55 -6.5 270)
 			(size 5.1 5.2)
-			(layers "B.Cu" "B.Mask")
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
 			(net 1 "GND")
 			(pinfunction "Ext")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "d77a869a-2987-46e8-b2df-b8414b44e84d")
+			(uuid "c718af57-2bf3-45b6-b5ae-25bd244950f5")
 		)
 		(embedded_fonts no)
 	)
@@ -505,6 +487,16 @@
 		(layer "B.Cu")
 		(uuid "a7599c84-b860-4dae-8f08-1d97746284dd")
 	)
+	(gr_line
+		(start 149.9 84.600001)
+		(end 149.9 82.8)
+		(stroke
+			(width 3)
+			(type default)
+		)
+		(layer "B.Mask")
+		(uuid "598fef5d-48e0-4c50-b38f-fc27d39f96f7")
+	)
 	(gr_rect
 		(start 139.77 77.47)
 		(end 145.23 82.76)
@@ -525,16 +517,6 @@
 		)
 		(layer "B.Mask")
 		(uuid "c95ab164-88a9-4c2d-85ee-9940c56aa3b6")
-	)
-	(gr_line
-		(start 149.9 84.600001)
-		(end 149.9 82.8)
-		(stroke
-			(width 3)
-			(type default)
-		)
-		(layer "B.Mask")
-		(uuid "598fef5d-48e0-4c50-b38f-fc27d39f96f7")
 	)
 	(gr_rect
 		(start 140.02 73.03)
