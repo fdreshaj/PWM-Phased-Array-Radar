@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 3.0,
-          "height": 5.2,
-          "width": 5.15
+          "drill": 0.0,
+          "height": 1.6,
+          "width": 1.6
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.1
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -58,62 +58,21 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "shorting_items|212690000|67750000|c770afa9-bff0-4d2c-b925-f81997b1da80|d44fa7b1-3535-494b-acd0-c3cbdf6c6fb9",
-          ""
-        ],
-        [
-          "shorting_items|213190000|67750000|59d34c5b-dc11-4dfa-a936-4d4c021b5106|d44fa7b1-3535-494b-acd0-c3cbdf6c6fb9",
-          "intended"
-        ],
-        [
-          "shorting_items|224250000|53515000|38910066-4537-43b1-aaa1-774bb6233eb2|6f0a7ad1-6a6b-452c-8e2b-0d305fb3f55f",
-          "intended"
-        ],
-        [
-          "shorting_items|224250000|73040275|6f0a7ad1-6a6b-452c-8e2b-0d305fb3f55f|bc121365-c137-43a6-93b2-b15268d7db9c",
-          "intended"
-        ],
-        [
-          "track_dangling|111000000|50000000|09329d7d-a357-4ad7-94f7-ad9d062a0746|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "track_dangling|111000000|64000000|d5a39683-5714-413a-9499-dbea646dbac5|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "track_dangling|197700000|60750000|2d1c6206-be58-497e-8007-415715c48240|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "track_dangling|197700000|74750000|2a53398b-aabc-497a-bedb-5e3b681d4022|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "track_dangling|200700000|65330000|008d1f98-5739-42d7-9c5a-bb8e07e0bad2|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "track_dangling|216300000|67750000|c770afa9-bff0-4d2c-b925-f81997b1da80|00000000-0000-0000-0000-000000000000",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
       "rule_severities": {
         "annular_width": "error",
-        "clearance": "warning",
+        "clearance": "error",
         "connection_width": "error",
-        "copper_edge_clearance": "ignore",
+        "copper_edge_clearance": "error",
         "copper_sliver": "error",
         "courtyards_overlap": "warning",
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
-        "drill_out_of_range": "ignore",
+        "drill_out_of_range": "warning",
         "duplicate_footprints": "error",
         "extra_footprint": "error",
         "footprint": "error",
@@ -164,7 +123,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.1,
+        "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.0,
         "min_groove_width": 0.0,
@@ -177,7 +136,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.1,
+        "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -560,7 +519,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "Gerbers/BPSK/",
+      "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -686,6 +645,10 @@
     [
       "41684577-bbc9-4dcf-b3ff-85e6d431a910",
       "Root"
+    ],
+    [
+      "af2e7f76-a926-499d-877a-c10fe10784e8",
+      "Antenna_Board"
     ]
   ],
   "text_variables": {}
