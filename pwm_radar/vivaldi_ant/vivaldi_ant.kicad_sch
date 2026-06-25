@@ -175,54 +175,27 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Antenna_Chip"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
+		(symbol "antenna_lib:Vivaldi_Antenna_10_24"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "AE"
-				(at 0 5.08 0)
+			(property "Reference" "U"
+				(at -1.016 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
 				)
 			)
-			(property "Value" "Antenna_Chip"
-				(at 0 3.175 0)
+			(property "Value" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
 				)
 			)
 			(property "Footprint" ""
-				(at -2.54 4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at -2.54 4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Ceramic chip antenna with pin for PCB trace"
 				(at 0 0 0)
 				(effects
 					(font
@@ -231,7 +204,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "antenna"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -240,13 +213,70 @@
 					(hide yes)
 				)
 			)
-			(symbol "Antenna_Chip_0_1"
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Vivaldi_Antenna_10_24_0_1"
 				(polyline
 					(pts
-						(xy -2.54 0) (xy -2.54 -0.635)
+						(xy -1.27 7.62) (xy -8.89 7.62) (xy -8.89 5.08) (xy -1.27 5.08)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 1.27)
+					(mid -0.898 2.168)
+					(end 0 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid -0.898 0.372)
+					(end -1.27 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 7.62 8.89)
+					(mid 4.9741 4.3181)
+					(end 0 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 5.6141 -2.0059)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -255,79 +285,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27) (xy -1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 1.27) (xy 0.635 1.27) (xy 0.635 -1.27) (xy -0.635 -1.27) (xy -0.635 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 6.985) (xy 2.54 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -0.635) (xy 2.54 0)
+						(xy 1.27 7.62) (xy -1.27 7.62)
 					)
 					(stroke
 						(width 0)
@@ -339,10 +297,106 @@
 				)
 				(polyline
 					(pts
-						(xy 3.81 6.985) (xy 2.54 1.905) (xy 1.27 6.985)
+						(xy 1.27 5.08) (xy -1.27 5.08)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 1.27 5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 5.08) (xy 1.27 7.62)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 5.08) (xy 2.54 5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 3.81 1.27)
+					(mid 3.438 0.372)
+					(end 2.54 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.27) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 8.89) (xy 7.62 8.89)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -350,11 +404,11 @@
 					)
 				)
 			)
-			(symbol "Antenna_Chip_1_1"
+			(symbol "Vivaldi_Antenna_10_24_1_1"
 				(pin input line
-					(at -2.54 -2.54 90)
+					(at -11.43 6.35 0)
 					(length 2.54)
-					(name "FEED"
+					(name "Ant_In"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -369,17 +423,17 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 2.54 -2.54 90)
+				(pin input line
+					(at 5.08 -7.62 0)
 					(length 2.54)
-					(name "PCB_Trace"
+					(name "Gnd"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -492,72 +546,74 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 100.33 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2a186b59-35a8-4589-8c9e-bc9bc6a17510")
-	)
 	(wire
 		(pts
-			(xy 100.33 88.9) (xy 100.33 102.87)
+			(xy 116.84 86.36) (xy 121.92 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1a735cbb-6c36-4967-9a12-0bc451bc3394")
+		(uuid "0ce413cc-f853-4625-b3b1-5a9c229afd05")
 	)
 	(wire
 		(pts
-			(xy 105.41 88.9) (xy 105.41 97.79)
+			(xy 111.76 97.79) (xy 111.76 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5225da36-77ab-427d-8311-455a3f78a954")
+		(uuid "3f739b5b-a72a-4e92-9ee7-d34cdcb82345")
 	)
 	(wire
 		(pts
-			(xy 100.33 102.87) (xy 100.33 105.41)
+			(xy 129.54 100.33) (xy 138.43 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e88f150b-7525-42ea-abe3-341b03d5e194")
+		(uuid "50838d32-752f-4eac-96a0-837baab0573b")
+	)
+	(wire
+		(pts
+			(xy 129.54 101.6) (xy 129.54 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "add3b777-5b66-439b-8033-39f277172fb1")
 	)
 	(symbol
-		(lib_id "Device:Antenna_Chip")
-		(at 102.87 86.36 0)
+		(lib_id "Connector:Conn_Coaxial")
+		(at 111.76 86.36 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2c970bc3-0c86-4390-a58e-a4ca2ae587eb")
-		(property "Reference" "AE1"
-			(at 107.95 82.5499 0)
+		(uuid "1b63fa27-6936-49d3-815e-732a56cb235f")
+		(property "Reference" "J1"
+			(at 112.0532 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Antenna_Chip"
-			(at 107.95 85.0899 0)
+		(property "Value" "Conn_Coaxial"
+			(at 112.0532 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 81.915 0)
+			(at 111.76 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -566,7 +622,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 100.33 81.915 0)
+			(at 111.76 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -574,8 +630,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Ceramic chip antenna with pin for PCB trace"
-			(at 102.87 86.36 0)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 111.76 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -584,15 +640,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "8734cae1-dd22-4307-a736-a3d42dc59c59")
+			(uuid "a9536c83-019f-4b58-ad5e-a6329552f802")
 		)
 		(pin "2"
-			(uuid "f06e6570-7958-468c-a788-12e568bf0920")
+			(uuid "bad5c659-8ac0-417f-bd3e-5bda47bf4341")
 		)
 		(instances
 			(project "vivaldi_ant"
 				(path "/473c314d-f4c1-4cdc-a015-543d118d373f"
-					(reference "AE1")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -600,16 +656,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.33 105.41 0)
+		(at 111.76 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8134e14e-48b1-48ea-9b48-8d85cbffc2c1")
+		(uuid "2110a175-b1dd-4f32-8b60-809a82d4f80e")
 		(property "Reference" "#PWR01"
-			(at 100.33 111.76 0)
+			(at 111.76 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -618,7 +674,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.33 110.49 0)
+			(at 111.76 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -627,7 +683,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 105.41 0)
+			(at 111.76 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -636,7 +692,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 105.41 0)
+			(at 111.76 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -645,7 +701,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 105.41 0)
+			(at 111.76 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -654,7 +710,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "d6ce4932-9710-47b8-aaad-617dfa0cec58")
+			(uuid "d0b6a4f6-6bb7-45d4-834e-fb8a15d09819")
 		)
 		(instances
 			(project "vivaldi_ant"
@@ -666,35 +722,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_Coaxial")
-		(at 105.41 102.87 270)
+		(lib_id "power:GND")
+		(at 129.54 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ab5dc732-3d8c-420e-81d0-b0c81a92b397")
-		(property "Reference" "J1"
-			(at 109.22 101.2824 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_Coaxial"
-			(at 109.22 103.8224 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount"
-			(at 105.41 102.87 0)
+		(uuid "75f9de1a-549e-4e1c-b927-eeedbfa20d04")
+		(property "Reference" "#PWR02"
+			(at 129.54 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -702,8 +740,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 105.41 102.87 0)
+		(property "Value" "GND"
+			(at 129.54 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -711,8 +749,26 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 105.41 102.87 0)
+		(property "Footprint" ""
+			(at 129.54 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 129.54 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -721,15 +777,82 @@
 			)
 		)
 		(pin "1"
-			(uuid "cfd7efe8-1157-412c-ad58-deb68e5d64ba")
-		)
-		(pin "2"
-			(uuid "11f01425-eec6-426a-9697-3a9be292afe8")
+			(uuid "9b9d9d18-571e-45f6-bc03-1aa554e8254c")
 		)
 		(instances
 			(project "vivaldi_ant"
 				(path "/473c314d-f4c1-4cdc-a015-543d118d373f"
-					(reference "J1")
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "antenna_lib:Vivaldi_Antenna_10_24")
+		(at 133.35 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e84f0435-112e-4fd6-936b-4328bc952edd")
+		(property "Reference" "U1"
+			(at 142.24 90.8049 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 142.24 93.3449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "RF_Antenna:Vivaldi Antenna 10 to 24 GHz"
+			(at 133.35 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd063897-5530-4ae9-b2ac-fc73e34a5ca9")
+		)
+		(pin ""
+			(uuid "9c6a12d8-b407-4a17-abd0-d65131d546fa")
+		)
+		(instances
+			(project "vivaldi_ant"
+				(path "/473c314d-f4c1-4cdc-a015-543d118d373f"
+					(reference "U1")
 					(unit 1)
 				)
 			)
