@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 1.26055,
-          "width": 25.14
+          "drill": 0.8,
+          "height": 1.27,
+          "width": 2.54
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.1
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -60,7 +60,47 @@
       ],
       "drc_exclusions": [
         [
-          "shorting_items|145137413|82065000|4dd3f10f-5fda-4ad4-886f-591dae737462|5ab6f754-ec86-428f-82fe-ba370d98ad7b",
+          "copper_edge_clearance|108011398|82339472|03fc8e8e-fab1-4650-91d7-303934f0648f|a40c21a4-14cf-4f68-a6da-8e25496d8d81",
+          ""
+        ],
+        [
+          "copper_edge_clearance|108011398|91339472|03fc8e8e-fab1-4650-91d7-303934f0648f|8ebf6d70-11e1-450a-82e2-3699f5ebf7bc",
+          ""
+        ],
+        [
+          "copper_edge_clearance|170631398|94873369|3c2414b1-5e8c-4e82-a260-7f0a79e145fe|1e78909b-be85-45a6-ac36-8fb20bd87104",
+          ""
+        ],
+        [
+          "shorting_items|146501398|89414472|8bf8812b-cd45-4e67-8f02-4447ad99800f|cce4a134-c5b4-4e6d-acad-1697d644acc5",
+          ""
+        ],
+        [
+          "shorting_items|147001398|89414472|8bf8812b-cd45-4e67-8f02-4447ad99800f|b1347788-683c-4fac-8f41-a0a5b13b2aa2",
+          ""
+        ],
+        [
+          "shorting_items|158061398|75179472|1e78909b-be85-45a6-ac36-8fb20bd87104|c6ad19a9-96aa-4426-8dd9-2e0a16ad64b2",
+          ""
+        ],
+        [
+          "shorting_items|158061398|94704747|1e78909b-be85-45a6-ac36-8fb20bd87104|7b59b8ac-bda6-4533-b964-637860974fae",
+          ""
+        ],
+        [
+          "track_dangling|131511398|82414472|114b2a61-c4f7-4b74-99bd-73a34fd670a7|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "track_dangling|131511398|96414472|9869f78d-4a69-4221-90ec-54da8120cc12|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "track_dangling|134511398|86994472|204e4d71-b2c6-4409-b3c0-1cc5bccc20d5|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "track_dangling|150111398|89414472|cce4a134-c5b4-4e6d-acad-1697d644acc5|00000000-0000-0000-0000-000000000000",
           ""
         ]
       ],
@@ -71,7 +111,7 @@
         "annular_width": "error",
         "clearance": "warning",
         "connection_width": "error",
-        "copper_edge_clearance": "ignore",
+        "copper_edge_clearance": "error",
         "copper_sliver": "error",
         "courtyards_overlap": "warning",
         "creepage": "error",
@@ -479,7 +519,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "vivaldi_ant.kicad_pro",
+    "filename": "pwm_radar_with_antenna.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -520,7 +560,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../Gerbers/ANT/",
+      "plot": "../Gerbers/BPSK_with_ant/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -644,7 +684,7 @@
   },
   "sheets": [
     [
-      "473c314d-f4c1-4cdc-a015-543d118d373f",
+      "5780a9ea-c258-4b75-95d6-63c9c49b5279",
       "Root"
     ]
   ],
