@@ -120,6 +120,7 @@
 	(net 1 "GND")
 	(net 2 "Net-(AE1-PCB_Trace)")
 	(net 3 "Net-(J1-Ext)")
+	(net 4 "Net-(J4-In)")
 	(footprint "RF_Antenna:Vivaldi Antenna 10 to 24 GHz"
 		(layer "F.Cu")
 		(uuid "ebb9ff25-f0a8-435b-84c9-7b15c1447eb3")
@@ -480,7 +481,7 @@
 			(pinfunction "Ext")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "c718af57-2bf3-45b6-b5ae-25bd244950f5")
+			(uuid "ae80c0aa-e883-46d4-a7cb-448712ea809d")
 		)
 		(pad "2" thru_hole rect
 			(at 4.7 -6.2 270)
@@ -494,7 +495,7 @@
 			(pinfunction "Ext")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "c718af57-2bf3-45b6-b5ae-25bd244950f5")
+			(uuid "d732daaa-5d5c-4502-908b-602a6cf8f03e")
 		)
 		(embedded_fonts no)
 		(model "C:/Users/flatr/Downloads/STP_ConSMA_60312862112552_rev1.stp"
@@ -508,6 +509,18 @@
 				(xyz -0 -0 -180)
 			)
 		)
+	)
+	(gr_rect
+		(start 143.83 93.92)
+		(end 168.94 96.01)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "071d8dc4-7f9d-4a40-95d6-539fef08a249")
 	)
 	(gr_rect
 		(start 133.6 71.9)
@@ -532,16 +545,6 @@
 		(net 3)
 		(uuid "a7599c84-b860-4dae-8f08-1d97746284dd")
 	)
-	(gr_line
-		(start 149.9 84.600001)
-		(end 149.9 82.8)
-		(stroke
-			(width 3)
-			(type default)
-		)
-		(layer "B.Mask")
-		(uuid "598fef5d-48e0-4c50-b38f-fc27d39f96f7")
-	)
 	(gr_rect
 		(start 139.77 77.47)
 		(end 145.23 82.76)
@@ -563,16 +566,91 @@
 		(layer "B.Mask")
 		(uuid "c95ab164-88a9-4c2d-85ee-9940c56aa3b6")
 	)
-	(gr_rect
-		(start 140.02 73.03)
+	(gr_line
+		(start 149.9 84.600001)
+		(end 149.9 82.8)
+		(stroke
+			(width 3)
+			(type default)
+		)
+		(layer "B.Mask")
+		(uuid "598fef5d-48e0-4c50-b38f-fc27d39f96f7")
+	)
+	(gr_line
+		(start 140.02 94.76)
+		(end 140.02 73.03)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "13c56320-1e46-410a-9d54-4e52a289c7ae")
+	)
+	(gr_line
+		(start 140.02 96.37)
+		(end 140.02 94.76)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "e66b2195-c991-4f94-89b3-8343cd7df24a")
+	)
+	(gr_line
+		(start 169.29 73.03)
+		(end 140.02 73.03)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "09995e31-aaa4-4d4b-ad7d-28a6ec853e46")
+	)
+	(gr_line
+		(start 169.29 73.03)
 		(end 169.29 94.76)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
-		(fill no)
 		(layer "Edge.Cuts")
-		(uuid "626d67b3-0f5d-4164-92b7-80907235ac23")
+		(uuid "8fdf05a9-b7d1-4fd1-a0bb-a64e1989f7d0")
+	)
+	(gr_line
+		(start 169.29 94.76)
+		(end 169.29 96.36)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "ede0e2a7-cfb2-4e88-b4b0-b4a169bea99f")
+	)
+	(gr_line
+		(start 169.29 96.36)
+		(end 140.02 96.369993)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "d19f8b62-7cc8-441e-b07c-b29133a9c21e")
+	)
+	(segment
+		(start 143.55 80.1)
+		(end 140.25 80.1)
+		(width 1.1)
+		(layer "B.Cu")
+		(net 4)
+		(uuid "08fc4020-4bc6-4ce5-9631-95ffbae236e6")
+	)
+	(segment
+		(start 143.55 80.1)
+		(end 145.25 80.1)
+		(width 1.1)
+		(layer "B.Cu")
+		(net 4)
+		(uuid "38b04979-c4a2-47f8-9701-1fda389bb87a")
 	)
 	(zone
 		(net 1)
@@ -597,13 +675,16 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 169.195258 73.050185) (xy 169.241013 73.102989) (xy 169.252219 73.154413) (xy 169.25303 74.316516)
-				(xy 169.233392 74.38357) (xy 169.18062 74.429361) (xy 169.12903 74.440603) (xy 145.137408 74.440603)
+				(xy 168.982539 73.300185) (xy 169.028294 73.352989) (xy 169.0395 73.4045) (xy 169.0395 74.316603)
+				(xy 169.019815 74.383642) (xy 168.967011 74.429397) (xy 168.9155 74.440603) (xy 145.137408 74.440603)
 				(xy 145.091684 74.445754) (xy 145.009286 74.485436) (xy 144.952264 74.556939) (xy 144.931913 74.646098)
-				(xy 144.931913 94.6355) (xy 144.912228 94.702539) (xy 144.859424 94.748294) (xy 144.807913 94.7595)
-				(xy 140.1445 94.7595) (xy 140.077461 94.739815) (xy 140.031706 94.687011) (xy 140.0205 94.6355)
-				(xy 140.0205 73.1545) (xy 140.040185 73.087461) (xy 140.092989 73.041706) (xy 140.1445 73.0305)
-				(xy 169.128219 73.0305)
+				(xy 144.931913 94.646107) (xy 144.937064 94.691831) (xy 144.976746 94.774229) (xy 144.976747 94.77423)
+				(xy 145.04825 94.831252) (xy 145.123616 94.848454) (xy 145.137408 94.851602) (xy 145.137413 94.851603)
+				(xy 168.9155 94.851603) (xy 168.982539 94.871288) (xy 169.028294 94.924092) (xy 169.0395 94.975603)
+				(xy 169.0395 95.985627) (xy 169.019815 96.052666) (xy 168.967011 96.098421) (xy 168.915542 96.109627)
+				(xy 140.394542 96.119364) (xy 140.327496 96.099702) (xy 140.281723 96.046914) (xy 140.2705 95.995364)
+				(xy 140.2705 73.4045) (xy 140.290185 73.337461) (xy 140.342989 73.291706) (xy 140.3945 73.2805)
+				(xy 168.9155 73.2805)
 			)
 		)
 	)

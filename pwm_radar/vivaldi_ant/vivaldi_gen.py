@@ -5,14 +5,14 @@ import numpy as np
 # ─── Design Parameters (mm) ──────────────────────────────────────────────────
 A           = 0.05      # half of Wmin
 p           = 0.25      # GUI
-L           = 17.0      # GUI
-W_max       = 8.4      # GUI
+L           = 16.0      # GUI
+W_max       = 8.5      # GUI
 f_w         = 1.1      # GUI
 f_l         = 10.0      # feed line length
 stub_m      = 2.59      # open microstrip stub length (λm/4 at 17GHz)
 stub_r      = 2.9      # GUI
 stub_angle  = 90.0      # GUI
-margin      = 0.500      # GUI
+margin      = 1.500      # GUI
 N           = 200       # taper polygon resolution
 N_stub      = 64        # radial stub arc resolution
 
