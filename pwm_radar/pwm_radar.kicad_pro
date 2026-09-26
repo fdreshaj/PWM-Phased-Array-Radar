@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.15
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,24 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "copper_edge_clearance|125000000|50000000|7bfc7d63-0018-4591-9626-b00a4ca62475|4e76d1ba-e8ce-4969-9a8e-155e844f0247",
+          "connector"
+        ],
+        [
+          "copper_edge_clearance|125000000|64000000|7bfc7d63-0018-4591-9626-b00a4ca62475|1d3a37f8-ea86-4322-8c18-abfdb5b88b09",
+          "connector"
+        ],
+        [
+          "copper_edge_clearance|88000000|56000000|230244e8-7eea-4614-ad88-a016bdfd7a51|aa2861ab-473b-40e7-bf78-6e883beea846",
+          "connector"
+        ],
+        [
+          "copper_edge_clearance|88000000|64000000|230244e8-7eea-4614-ad88-a016bdfd7a51|ecc752af-27ac-45e9-984a-de993321c858",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -190,7 +207,9 @@
         0.0,
         0.1,
         0.2,
+        0.25,
         0.3,
+        0.381,
         0.4,
         0.477,
         0.5,
@@ -646,10 +665,6 @@
     [
       "41684577-bbc9-4dcf-b3ff-85e6d431a910",
       "Root"
-    ],
-    [
-      "af2e7f76-a926-499d-877a-c10fe10784e8",
-      "Antenna_Board"
     ]
   ],
   "text_variables": {}
