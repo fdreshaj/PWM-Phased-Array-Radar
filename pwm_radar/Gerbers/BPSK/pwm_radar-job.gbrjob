@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "9.0.8"
     },
-    "CreationDate": "2026-06-26T13:09:39-05:00"
+    "CreationDate": "2026-10-05T18:38:18-05:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -14,22 +14,30 @@
       "Revision": "rev?"
     },
     "Size": {
-      "X": 39.05,
-      "Y": 39.05
+      "X": 37.05,
+      "Y": 25.05
     },
-    "LayerNumber": 2,
+    "LayerNumber": 4,
     "BoardThickness": 0.6,
     "Finish": "None"
   },
   "DesignRules": [
     {
       "Layers": "Outer",
-      "PadToPad": 0.001,
-      "PadToTrack": 0.001,
+      "PadToPad": 0.15,
+      "PadToTrack": 0.15,
       "TrackToTrack": 0.2,
       "MinLineWidth": 0.1,
       "TrackToRegion": 0.2,
       "RegionToRegion": 0.2
+    },
+    {
+      "Layers": "Inner",
+      "PadToPad": 0.15,
+      "PadToTrack": 0.15,
+      "TrackToTrack": 0.2,
+      "TrackToRegion": 0.25,
+      "RegionToRegion": 0.25
     }
   ],
   "FilesAttributes": [
@@ -39,8 +47,18 @@
       "FilePolarity": "Positive"
     },
     {
+      "Path": "pwm_radar-In1_Cu.gbr",
+      "FileFunction": "Copper,L2,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "pwm_radar-In2_Cu.gbr",
+      "FileFunction": "Copper,L3,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
       "Path": "pwm_radar-B_Cu.gbr",
-      "FileFunction": "Copper,L2,Bot",
+      "FileFunction": "Copper,L4,Bot",
       "FilePolarity": "Positive"
     },
     {
@@ -90,6 +108,7 @@
     },
     {
       "Type": "SolderMask",
+      "Color": "R80G0B80",
       "Thickness": 0.01,
       "Name": "Top Solder Mask"
     },
@@ -100,10 +119,35 @@
     },
     {
       "Type": "Dielectric",
-      "Thickness": 0.51,
-      "Material": "Rogers RO4350B",
-      "Name": "F.Cu/B.Cu",
-      "Notes": "Type: dielectric layer 1 (from F.Cu to B.Cu)"
+      "Color": "R109G116B75",
+      "Thickness": 0.1,
+      "Material": "FR408",
+      "Name": "F.Cu/In1.Cu",
+      "Notes": "Type: dielectric layer 1 (from F.Cu to In1.Cu)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "In1.Cu"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.24,
+      "Material": "FR408",
+      "Name": "In1.Cu/In2.Cu",
+      "Notes": "Type: dielectric layer 2 (from In1.Cu to In2.Cu)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "In2.Cu"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.1,
+      "Material": "FR408",
+      "Name": "In2.Cu/B.Cu",
+      "Notes": "Type: dielectric layer 3 (from In2.Cu to B.Cu)"
     },
     {
       "Type": "Copper",
@@ -112,6 +156,7 @@
     },
     {
       "Type": "SolderMask",
+      "Color": "R80G0B80",
       "Thickness": 0.01,
       "Name": "Bottom Solder Mask"
     },
